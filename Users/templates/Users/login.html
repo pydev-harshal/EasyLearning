@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Learning | Login</title>
+    <link rel="stylesheet" href="{% static "Users/css/style.css" %}">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-wrapper">
+            <h1 class="login-heading">LOGIN TO ACCOUNT</h1>
+            <p class="login-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, facilis!</p>
+            <form class="login-form" method="post">
+                {% csrf_token %}
+                <div class="login-form-items">
+                    <label class="login-label" for="emailId">Email</label>
+                    <input id="emailId" class="login-input" type="text" name="email" required>
+                </div>
+                <div class="login-form-items">
+                    <label class="login-label" for="password">Password</label>
+                    <input id="emailID" class="login-input" type="password" name="password" required>
+                </div>
+                <div class="login-form-items">
+                    <button class="login-button" type="submit">LOGIN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/4dd23f7737.js" crossorigin="anonymous"></script>
+    <script src="{% static "Users/js/script.js" %}"></script>
+</body>
+</html>

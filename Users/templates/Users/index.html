@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Learning | Home</title>
+    <link rel="stylesheet" href="{% static 'Users/css/style.css' %}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-wrapper">
+            <h1 class="nav-title"><i class="fa-solid fa-graduation-cap"></i>&nbsp;EASY LEARNING</h1>
+            <input class="nav-search-bar" type="text" placeholder="What you want to Learn ?">
+            <div class="menu-icon" id="menu-icon">
+                &#9776; 
+            </div> 
+            <ul class="nav-items" id="nav-items">
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;LOGIN</a></li> 
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-user"></i>&nbsp;REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main overlap-on-nav">
+        <section class="carosuel">
+            <div class="carosuel-wrapper">
+                <img class="carosuel-img" src="{% static 'Users/img/carosuel_1.jpg' %}" alt="carosuel image 1">
+                <img class="carosuel-img" src="{% static 'Users/img/carosuel_2.jpg' %}" alt="carosuel image 2">
+                <img class="carosuel-img" src="{% static 'Users/img/carosuel_3.jpg' %}" alt="carosuel image 3">
+            </div>
+            <button class="carosuel-button prev">&lt;</button>
+            <button class="carosuel-button next">&gt;</button>
+ 
+        </section>
+
+         <section class="course"> <!-- INCOMPLETE -->
+            <div class="course-wrapper">
+                <h1 class="course-heading">All The Skills You Need In One Place.</h1>
+                <p class="course-text">From critical skills to technical topics, Udemy supports your professional development.</p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/4dd23f7737.js" crossorigin="anonymous"></script>
+    <script src="{% static "Users/js/script.js" %}"></script>
+</body>
+</html>

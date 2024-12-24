@@ -1,0 +1,68 @@
+# Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.py[co]
+*~
+*.sqlite3
+
+# If you're using the SQLite database:
+db.sqlite3
+db.sqlite3-journal
+
+# Media
+/media
+/mediafiles
+
+
+
+# Local environment variables
+.env
+
+# Django migrations
+*/migrations/*
+
+# Ignore virtual environments
+venv/
+env/
+ENV/
+
+# Ignore VS Code workspace settings
+.vscode/
+.settings/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore coverage reports
+htmlcov/
+*.cover
+.coverage
+*.cov
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore mypy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ignore node_modules (if using Node.js or frontend dependencies)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/
+
+# Ignore compiled bytecode from Cython
+*.c
+*.cpp
